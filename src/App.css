@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+@import url(//db.onlinewebfonts.com/c/c632fa0216eed0c3ee8384ffb53b9f5e?family=Cooper);
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  background: #000;
+  height: 100vh;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoImage {
+  position: relative;
+  z-index: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 52px auto;
+  height: 153px;
+}
+
+.shortLogoImg {
+  position: absolute;
+  z-index: 2;
+  margin: 23px 34px;
+  width: 150px;
+}
+
+.scrollBelow {
+  position: relative;
+  display: flex;
+  margin: 1px auto 68px auto;
+  height: 20px;
+  filter: invert(0.95);
+}
+
+.coverBgImage {
+  width: 100%;
+  margin-bottom: -140px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.search {
+  height: 100px;
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  text-align: center;
+  border-radius: 0.7em;
+  width: 60%;
+  margin: auto;
+  outline: none;
+  background-image: linear-gradient(
+    129deg,
+    rgba(9, 48, 9, 1) 0%,
+    rgba(13, 62, 16, 1) 0%,
+    rgba(31, 96, 50, 1) 54%,
+    rgba(41, 119, 62, 1) 70%,
+    rgba(3, 34, 2, 1) 100%
+  );
+  color: rgb(231, 230, 230);
+  font-weight: bold;
+  font-family: "Source Sans 3";
+}
+
+input::placeholder {
+  color: black;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  cursor: pointer;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card h1 {
+  font-family: Cooper;
+  font-size: 25px;
+  font-weight: 200;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1.2em;
+  box-shadow: 0px 0px 4px #42423d;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateX(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background-image: url("./assets/img/newCardBG.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-position-y: center;
   color: white;
+  padding: 20px;
+  transform: rotateX(180deg);
+  box-shadow: 0px 0px 4px #42423d;
+  border-radius: 1.2em;
+  border: 5px solid rgba(31, 96, 50, 1);
 }
 
-.App-link {
-  color: #61dafb;
+.card li {
+  list-style: none;
+  padding-bottom: 10px;
+  font-family: "Source Sans 3";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.scrollToTopBtn {
+  border: 2px solid black;
+  padding: 11px;
+  width: 122px;
+  font-family: "Source Sans 3";
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border-radius: 1em;
+  flex-direction: column;
+  display: flex;
+  background-image: linear-gradient(
+    129deg,
+    rgba(9, 48, 9, 1) 0%,
+    rgba(13, 62, 16, 1) 0%,
+    rgba(31, 96, 50, 1) 54%,
+    rgba(41, 119, 62, 1) 70%,
+    rgba(3, 34, 2, 1) 100%
+  );
+  margin: 60px auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
   }
 }
