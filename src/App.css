@@ -1,4 +1,4 @@
-/* @import url(//db.onlinewebfonts.com/c/c632fa0216eed0c3ee8384ffb53b9f5e?family=Cooper); */
+@import url(//db.onlinewebfonts.com/c/c632fa0216eed0c3ee8384ffb53b9f5e?family=Cooper);
 
 @font-face {font-family: "Cooper"; src: url("//db.onlinewebfonts.com/t/c632fa0216eed0c3ee8384ffb53b9f5e.eot"); src: url("//db.onlinewebfonts.com/t/c632fa0216eed0c3ee8384ffb53b9f5e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c632fa0216eed0c3ee8384ffb53b9f5e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c632fa0216eed0c3ee8384ffb53b9f5e.woff") format("woff"), url("//db.onlinewebfonts.com/t/c632fa0216eed0c3ee8384ffb53b9f5e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c632fa0216eed0c3ee8384ffb53b9f5e.svg#Cooper") format("svg"); }
 
@@ -102,7 +102,7 @@ input::placeholder {
 }
 
 .card h1 {
-  font-family: Cooper;
+  font-family: Cooper, "Source Sans 3";
   font-size: 25px;
   font-weight: 200;
   border-bottom: 1px #fff solid;
