@@ -1,6 +1,5 @@
 ### My submission for the assignment by Inkredo
 
-Readme to be updated by 13 April, 11:59PM telling about the features if the website.
 
 (Note: Website takes some time to load as of now, due to directly inserting image without compressing them since I am busy in college classes and labs etc. Also its due to loading of an audio file of ~3mb)
 
