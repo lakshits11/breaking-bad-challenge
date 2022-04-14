@@ -1,7 +1,7 @@
 ### My submission for the assignment by Inkredo
 
 
-(Note: Website takes some time to load as of now, due to directly inserting image without compressing them since I am busy in college classes and labs etc. Also its due to loading of an audio file of ~3mb)
+<!-- (Note: Website takes some time to load as of now, due to directly inserting image without compressing them since I am busy in college classes and labs etc. Also its due to loading of an audio file of ~3mb) -->
 
 <!-- # Getting Started with Create React App
 
