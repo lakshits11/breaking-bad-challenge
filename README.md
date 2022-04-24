@@ -1,4 +1,4 @@
-### My submission for the assignment by Inkredo
+### A breaking bad fan page implemented in ReactJS
 
 
 <!-- (Note: Website takes some time to load as of now, due to directly inserting image without compressing them since I am busy in college classes and labs etc. Also its due to loading of an audio file of ~3mb) -->
